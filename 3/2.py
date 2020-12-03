@@ -27,6 +27,5 @@ for slope in slopes:
     if col >= len(lines[0])-1:
         col = col - len(lines[0])
     tr += count_trees(lines, row, col)
-    pos = lines[row][col]
   trees.append(tr)
 print("Multiplied: {}".format(numpy.prod(trees)))
