@@ -3,9 +3,6 @@
 import sys
 import numpy
 
-# 265364640 too low
-# 1574890240
-
 trees = []
 f = open("input.txt", 'r')
 lines = f.read().splitlines()
@@ -23,8 +20,7 @@ for slope in slopes:
   row = 0
   col = 0
   tr = 0
-  col_i = slope[0]
-  row_i = slope[1]
+  col_i, row_i = slope
   while row < len(lines) - 1:
     row += row_i
     col += col_i
