@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import sys
+from itertools import permutations, islice
 
 with open('input.txt') as f:
   lines = [int(x) for x in f.read().splitlines()]
